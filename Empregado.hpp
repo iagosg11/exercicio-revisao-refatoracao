@@ -5,7 +5,7 @@
 #include <string>
 
 #define ExpedientePadrao 8; //Jornada de trabalho de 8 horas diárias
-#define CalcHoraExtra 0,5;
+#define CalcHoraExtra 0.5;
 
 
 class Empregado 
@@ -18,7 +18,7 @@ class Empregado
     void set_QuotaMensalVendas(double QuotaMensalVendas)
     {
      _QuotaMensalVendas = QuotaMensalVendas;	    
-    } 
+    }
     double PagamentoMes(double HorasTrabalhadas) 
     {
      double HorasRemuneradas = HorasTrabalhadas;
