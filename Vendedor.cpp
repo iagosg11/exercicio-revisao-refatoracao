@@ -13,7 +13,7 @@ class Vendedor : public Empregado
   
    std::string get_nome()
    {
-    return Nome;
+    return _Nome;
    } 
    
    void set_QuotaMensalVendas(double QuotaMensalVendas)
