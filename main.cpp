@@ -22,7 +22,7 @@ int main() {
   eng3.set_SalarioHora(30);
   eng3.set_projetos(2);
   eng3.Imprimir(8);
-  
+  std::cout << std::endl;	
   
   Vendedor vend1;
   vend1.set_nome("Tonho Lannister");
