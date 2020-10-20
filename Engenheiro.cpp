@@ -26,7 +26,7 @@ class Engenheiro : public Empregado
   
   void Imprimir(double HorasTrabalhadas)
   {
-   std::cout << "Nome: " << getnome() << std::endl;
+   std::cout << "Nome: " << get_nome() << std::endl;
    std::cout << "Salario Mes: " << PagamentoMes(HorasTrabalhadas) << std::endl;
    std::cout << "Projetos: " << get_projetos() << std::endl;
   }
