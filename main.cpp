@@ -4,31 +4,24 @@
 int main() {
 
   Engenheiro eng1;
-  eng1.nome = "Joao Snow";
-  eng1.salarioHora = 35;
-  eng1.projetos = 3; 
-  std::cout << "Nome: " << eng1.nome << std::endl;
-  std::cout << "Salario Mes: " << eng1.pagamentoMes(9.5) << std::endl;
-  std::cout << "Projetos: " << eng1.projetos << std::endl;
+  eng1.set_nome("Joao Snow");
+  eng1.set_SalarioHora(35);
+  eng1.set_projetos(3); 
+  eng1.Imprimir(9.5);
   std::cout << std::endl;
   
   Engenheiro eng2;
-  eng2.nome = "Daniela Targaryen";
-  eng2.salarioHora = 30;
-  eng2.projetos = 1; 
-  std::cout << "Nome: " << eng2.nome << std::endl;
-  std::cout << "Salario Mes: " << eng2.pagamentoMes(8) << std::endl;
-  std::cout << "Projetos: " << eng2.projetos << std::endl;  
+  eng2.set_nome("Daniela Targaryen");
+  eng2.set_SalarioHora(30);
+  eng2.set_projetos = 1; 
+  eng2.Imprimir(8);	  
   std::cout << std::endl;
   
   Engenheiro eng3;
-  eng3.nome = "Bruno Stark";
-  eng3.salarioHora = 30;
-  eng3.projetos = 2; 
-  std::cout << "Nome: " << eng3.nome << std::endl;
-  std::cout << "Salario Mes: " << eng3.pagamentoMes(8) << std::endl;
-  std::cout << "Projetos: " << eng3.projetos << std::endl;  
-  std::cout << std::endl;
+  eng3.set_nome("Bruno Stark");
+  eng3.set_SalarioHora(30);
+  eng3.set_projetos(2);
+  eng3.Imprimir(8);
   
   
   Vendedor vend1;
