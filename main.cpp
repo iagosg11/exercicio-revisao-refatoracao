@@ -27,21 +27,21 @@ int main() {
   Vendedor vend1;
   vend1.set_nome("Tonho Lannister");
   vend1.set_SalarioHora(20);
-  vend1.quotaMensalVendas(5000);
+  vend1.QuotaMensalVendas(5000);
   vend1.Imprimir(6);	
   std::cout << std::endl;
   
   Vendedor vend2;
   vend2.set_nome("Jose Mormont");
   vend2.set_SalarioHora(25);
-  vend2.quotaMensalVendas(3000);
+  vend2.QuotaMensalVendas(3000);
   vend2.Imprimir(8);	 
   std::cout << std::endl;  
 	
   Vendedor vend3;
   vend3.set_nome = "Sonia Stark";
   vend3.set_SalarioHora(30);
-  vend3.quotaMensalVendas(4000);
+  vend3.QuotaMensalVendas(4000);
   vend3.Imprimir(8);
   std::cout << std::endl;	
  
