@@ -29,7 +29,6 @@ class Engenheiro : public Empregado
    std::cout << "Nome: " << getnome() << std::endl;
    std::cout << "Salario Mes: " << PagamentoMes(HorasTrabalhadas) << std::endl;
    std::cout << "Projetos: " << get_projetos() << std::endl;
-   std::cout << std::endl;
   }
 
   private:
