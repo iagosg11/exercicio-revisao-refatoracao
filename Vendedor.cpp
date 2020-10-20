@@ -28,7 +28,7 @@ class Vendedor : public Empregado
    
    void Imprimir(double horasTrabalhadas)
    {
-    std::cout << "Nome: " << get_nome << std::endl;
+    std::cout << "Nome: " << get_nome() << std::endl;
     std::cout << "Salario Mes: " << PagamentoMes(HorasTrabalhadas) << std::endl;
     std::cout << "Quota vendas: " << QuotaTotalAnual() << std::endl;
    }
