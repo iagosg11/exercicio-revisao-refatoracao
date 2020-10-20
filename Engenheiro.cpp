@@ -4,24 +4,24 @@
 class Engenheiro : public Empregado 
 {
   public:
-  void set_nome(std::string _nome)
+  void set_nome(std::string Nome)
   {
-   Nome = _Nome;
+   _Nome = Nome;
   }
   
   std::string get_nome()
   {
-   return Nome;
+   return _Nome;
   }
   
-  void set_projetos(int _projetos)
+  void set_projetos(int Projetos)
   {
-   Projetos = _Projetos;
+   _Projetos = Projetos;
   }
   
   int get_projetos()
   {
-   return Projetos;
+   return _Projetos;
   }
   
   void Imprimir(double HorasTrabalhadas)
