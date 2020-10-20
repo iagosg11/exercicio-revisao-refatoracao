@@ -25,33 +25,25 @@ int main() {
   
   
   Vendedor vend1;
-  vend1.nome = "Tonho Lannister";
-  vend1.salarioHora = 20;
-  vend1.quotaMensalVendas = 5000;
-  
-  std::cout << "Nome: " << vend1.nome << std::endl;
-  std::cout << "Salario Mes: " << vend1.pagamentoMes(6) << std::endl;  
-  std::cout << "Quota vendas: " << vend1.quotaTotalAnual() << std::endl;
+  vend1.set_nome("Tonho Lannister");
+  vend1.set_SalarioHora(20);
+  vend1.quotaMensalVendas(5000);
+  vend1.Imprimir(6);	
   std::cout << std::endl;
   
   Vendedor vend2;
-  vend2.nome = "Jose Mormont";
-  vend2.salarioHora = 25;
-  vend2.quotaMensalVendas = 3000;
-  
-  std::cout << "Nome: " << vend2.nome << std::endl;
-  std::cout << "Salario Mes: " << vend2.pagamentoMes(8) << std::endl;  
-  std::cout << "Quota vendas: " << vend2.quotaTotalAnual() << std::endl; 
+  vend2.set_nome("Jose Mormont");
+  vend2.set_SalarioHora(25);
+  vend2.quotaMensalVendas(3000);
+  vend2.Imprimir(8);	 
   std::cout << std::endl;  
 	
   Vendedor vend3;
-  vend3.nome = "Sonia Stark";
-  vend3.salarioHora = 30;
-  vend3.quotaMensalVendas = 4000;
-  
-  std::cout << "Nome: " << vend3.nome << std::endl;
-  std::cout << "Salario Mes: " << vend3.pagamentoMes(8) << std::endl;  
-  std::cout << "Quota vendas: " << vend3.quotaTotalAnual() << std::endl;  
-  
+  vend3.set_nome = "Sonia Stark";
+  vend3.set_SalarioHora(30);
+  vend3.quotaMensalVendas(4000);
+  vend3.Imprimir(8);
+  std::cout << std::endl;	
+ 
   return 0;	
 }
