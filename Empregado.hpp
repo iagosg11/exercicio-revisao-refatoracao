@@ -15,10 +15,6 @@ class Empregado
     {
      _SalarioHora = SalarioHora;	    
     }
-    void set_QuotaMensalVendas(double QuotaMensalVendas)
-    {
-     _QuotaMensalVendas = QuotaMensalVendas;	    
-    }
     double PagamentoMes(double HorasTrabalhadas) 
     {
      double HorasRemuneradas = HorasTrabalhadas;
@@ -26,7 +22,7 @@ class Empregado
      if(HorasTrabalhadas > ExpedientePadrao) 
      {
       double HorasExtra = HorasTrabalhadas - ExpedientePadrao;
-      HorasRemuneradas += HorasExtras * CalcHoraExtra;
+      HorasRemuneradas += HorasExtra * CalcHoraExtra;
      }
      return HorasRemuneradas * salarioHora;
     }	
