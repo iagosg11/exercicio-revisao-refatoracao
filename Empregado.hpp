@@ -4,8 +4,8 @@
 #include <iostream>
 #include <string>
 
-#define HorasDia 8; //Jornada de trabalho de 8 horas diárias
-#define CalcHoraExtra 0.5;
+const int HorasDia = 8; 
+const float CalcHoraExtra = 0.5;
 
 
 class Empregado 
