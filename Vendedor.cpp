@@ -1,7 +1,7 @@
 #include <string>
 #include "Empregado.hpp"
 
-#define Calc_Anual 12;
+const int Calc_Anual = 12;
 
 class Vendedor : public Empregado 
 {
@@ -16,26 +16,25 @@ class Vendedor : public Empregado
     return _Nome;
    } 
    
-   void set_QuotaMensalVendas(double QuotaMensalVendas)
+   void set_quotaMensalVendas(double quotaMensalVendas)
    {
-    _QuotaMensalVendas = QuotaMensalVendas;	    
+    _quotaMensalVendas = quotaMensalVendas;	    
    }
 	
    double quotaTotalAnual() 
    {
-    return QuotaMensalVendas * Calc_Anual;
+    return _quotaMensalVendas * Calc_Anual;
    }
    
-   void Imprimir(double horasTrabalhadas)
+   void Imprimir(double HorasTrabalhadas)
    {
     std::cout << "Nome: " << get_nome() << std::endl;
     std::cout << "Salario Mes: " << PagamentoMes(HorasTrabalhadas) << std::endl;
-    std::cout << "Quota vendas: " << QuotaTotalAnual() << std::endl;
+    std::cout << "Quota vendas: " << quotaTotalAnual() << std::endl;
    }
    
   private:
    std::string _Nome;
-   int _QuotaMensalVendas;
+   double _quotaMensalVendas;
 	
 };
-
