@@ -4,24 +4,35 @@
 #include <iostream>
 #include <string>
 
-class Empregado {
-	
-  public:
-    double salarioHora;  
-    double quotaMensalVendas;  
+#define ExpedientePadrao 8; //Jornada de trabalho de 8 horas diárias
+#define CalcHoraExtra 0,5;
 
 
-    double pagamentoMes(double horasTrabalhadas) {
- 
-      double t = horasTrabalhadas;
-	  
-	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
-      if (horasTrabalhadas > 8) {
-        double x = horasTrabalhadas - 8;
-        t += x / 2;
-      }
-	  return t * salarioHora;
+class Empregado 
+{	
+ public:
+    void set_SalarioHora(double SalarioHora)
+    {
+     _SalarioHora = SalarioHora;	    
     }
+    void set_QuotaMensalVendas(double QuotaMensalVendas)
+    {
+     _QuotaMensalVendas = QuotaMensalVendas;	    
+    } 
+    double PagamentoMes(double HorasTrabalhadas) 
+    {
+     double HorasRemuneradas = HorasTrabalhadas;
+     //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
+     if(HorasTrabalhadas > ExpedientePadrao) 
+     {
+      double HorasExtra = HorasTrabalhadas - ExpedientePadrao;
+      HorasRemuneradas += HorasExtras * CalcHoraExtra;
+     }
+     return HorasRemuneradas * salarioHora;
+    }	
+ private:
+    double _SalarioHora;  
+    double _QuotaMensalVendas;
 	
 };
 
